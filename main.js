@@ -5,17 +5,15 @@ function conversion(celsius) {
     return farenheit
 }
 
-celsius = false;
-
 do {
     var celsius = prompt("Ingresa los grados Centigrados que deseas convertir");
-    if (celsius != false){
+    if (celsius != ""){
         console.log(conversion(celsius));
     }
     else {
         alert("No se ha ingresado ningun valor");
     }
-} while (celsius != false);
+} while (celsius != "");
 
 /*Hacer una función que muestre la tabla de multiplicar de un número*/
 
@@ -26,17 +24,15 @@ function tabla(num) {
     }
 }
 
-num = false;
-
 do {
     var num = prompt("Ingrsa el numero a multiplicar");
-    if (num != false) {
+    if (num != "") {
         console.log(tabla(num));
     }
     else {
         alert("No se ha ingresado ningun valor");
     }
-} while (num != false);
+} while (num != "");
 
 /*Escribe una función que imprima todos los números naturales de 1 hasta n (el usuario elige n)*/
 
