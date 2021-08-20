@@ -8,7 +8,7 @@ function conversion(celsius) {
 do {
     var celsius = prompt("Ingresa los grados Centigrados que deseas convertir");
     if (celsius != ""){
-        console.log(conversion(celsius));
+        console.log(`${celsius}°C equivalen a ${conversion(celsius)}°F`);
     }
     else {
         alert("No se ha ingresado ningun valor");
@@ -104,12 +104,13 @@ function factorial(num) {
         a = b;
         console.log(b);
     }
+    return b;
 }
 
 do {
     var num_2 = prompt("Ingresa un numero a calcular su factorial");
     if (num_2 != "") {
-        console.log(factorial(num_2));
+        console.log(`El factorial de ${num_2} es ${factorial(num_2)}`);
     }
     else {
         alert("Por favor ingresa un numero");
